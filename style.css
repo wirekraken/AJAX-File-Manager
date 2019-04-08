@@ -1,0 +1,196 @@
+﻿body{
+	font-family: Trebuchet MS, sans-serif;
+	cursor: default;
+	background: ;
+	color: #323417;
+	white-space: nowrap;
+}
+
+#block{
+	background:#fff;
+	width: 600px;
+	margin: 0 auto;
+	border-radius: 2px;
+	box-shadow: 1px 1px 5px grey, -1px -1px 5px grey;
+	height: 450px;
+	overflow-x:auto;
+}
+
+ol{
+	font-size: 14px;
+	line-height: 35px;
+	padding: 0px;
+	margin: 0px;
+}
+
+ol li{
+	margin: -1px 0 -1px 0px;
+	text-indent: 40px;
+	list-style: none;
+
+}
+
+ol li a{
+	text-decoration: none;
+	width: 100%;
+	color: #323417;
+}
+
+ol li a:hover{
+	background: rgba(0,0,0,.1);
+}
+
+.dir, .dir_back, .file{
+	display: flex;
+	width: 100%;
+}
+
+.dir_back{
+	background: url(images/back.png) no-repeat 3px center;
+}
+
+.dir{
+	background: url(images/folder.png) no-repeat 3px center;
+	background-size: contain;
+}
+
+.file{
+	background: url(images/txt.png) no-repeat 3px center;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+
+}
+
+.file .fileName{
+	width: 80%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.file .sizeFile{
+	text-align: right;
+	text-indent: 0;
+	width: 60px;
+}
+
+.file .deleteFile{
+	background: url(images/delete.png);
+	width: 30px;
+	transition: .3s;
+}
+
+.file .deleteFile:hover{
+	background-image: url(images/delete_act.png);
+}
+
+.file .downloadFile{
+	background: url(images/download.png);
+	width: 30px;
+	transition: .3s;
+}
+
+.file .downloadFile:hover{
+	background-image: url(images/download_act.png);
+}
+
+#barUploadFile{
+	background: white;
+	box-shadow: 1px 1px 3px grey ,-1px -1px 3px grey;
+	border-radius: 2px;
+	margin: 0 auto;
+	width: 600px;
+	margin-bottom: 10px;
+	display: flex;
+}
+
+#uploadFile{
+	background: url(images/upload.png) no-repeat;
+	width: 50px;
+	height: 32px;
+	transition: .3s;	
+}
+
+#uploadFile:hover{
+	background: url(images/upload_act.png) no-repeat;	
+}
+
+#actionStatus{
+	margin-left: auto;
+	line-height: 31px;
+	padding: 0 10px 0 10px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+#currentLoc{
+	padding: 5px 5px 5px 15px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+#windowSelectedFiles{
+	background: white;
+	transform: translateY(-999px);
+	font-size: 14px;
+	position: absolute;
+	left: 50%;
+	margin-left: -200px; 
+	box-shadow: 1px 1px 3px grey, -1px -1px 3px grey;
+	width: 400px;
+	padding: 2px;
+	margin-top: -10px;
+	border-radius: 3px;
+    transition: .5s;
+}
+
+#windowSelectedFiles div{
+	background: white;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+
+#send{
+	background: #666;
+	color: #ddd;
+	width: 49.8%;
+	transition: .3s
+}
+#send:hover{
+	background: #ddd;
+	color: #666;
+}
+#reject{
+	background: #666;
+	color: #ddd;
+	width: 49.8%;
+	transition: .3s;
+}
+#reject:hover{
+	background: #ddd;
+	color: #666;
+}
+
+#listSelectedFiles{
+	margin: 0;
+	padding: 0;
+
+}
+
+#listSelectedFiles li{
+	list-style: none;
+	text-indent: 10px;
+	display: flex;
+
+}
+
+#listSelectedFiles li span:first-child{
+	width: 80%;
+	border-right: 1px solid #ccc;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+#listSelectedFiles li span:last-child{
+	width: 20%;
+}

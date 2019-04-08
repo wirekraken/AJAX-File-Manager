@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>File Manager beta</title>
+	<link link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+   	<input id="file" type="file" name="files[]" multiple style="display: none"/>
+  	<div id="barUploadFile">
+		<label for="file" id="uploadFile"></label>
+		<span id="actionStatus"></span>	
+  	</div>
+	<div id="windowSelectedFiles">
+		<ul id="listSelectedFiles"></ul>
+		<div>
+			<span id="send">Upload</span>
+			<span id="reject">Reject</span>
+		</div>
+	</div>
+	<div id="block"></div>
+	<script src="docHandler.js"></script>
+	<script src="ajax.js"></script>
+</body>
+</html>
