@@ -7,8 +7,11 @@ function documentHandler(){
 	}
 
 	for(var x = 0; x < file.length; x++){
+
 		var ext = extension(file[x].children[0].innerText);
+
 		file[x].style.background = 'url(images/'+ ext.toLowerCase() +'.png) no-repeat 3px center';
+	
 	}
 
 	deleteHandler();
