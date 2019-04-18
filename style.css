@@ -114,6 +114,17 @@ ol li a:hover{
 	background: url(images/upload_act.png) no-repeat;	
 }
 
+#createItems{
+	background: url(images/create.png) no-repeat center 4px;
+	width: 32px;
+	/*height: 22px;*/
+	transition: .3s;
+}
+
+#createItems:hover{
+	background: url(images/create_act.png) no-repeat;	
+}
+
 #actionStatus{
 	margin-left: auto;
 	line-height: 31px;
@@ -128,7 +139,7 @@ ol li a:hover{
 	overflow: hidden;
 }
 
-#windowSelectedFiles{
+#windowSelectedFiles,#windowCreateItems{
 	background: white;
 	transform: translateY(-999px);
 	font-size: 14px;
@@ -142,31 +153,36 @@ ol li a:hover{
 	border-radius: 3px;
     transition: .5s;
 }
+#windowCreateItems{
+	/*transform: translateY(0);*/
+}
 
-#windowSelectedFiles div{
+#windowSelectedFiles div,#windowCreateItems div{
 	background: white;
 	display: flex;
 	justify-content: space-between;
 	text-align: center;
 }
 
-#send{
+#confirmUpload,#confirmCreation{
 	background: #666;
 	color: #ddd;
 	width: 49.8%;
 	transition: .3s
 }
-#send:hover{
+#confirmUpload:hover,#confirmCreation:hover{
 	background: #ddd;
 	color: #666;
 }
-#reject{
+
+#rejectUpload,#rejectCreation{
 	background: #666;
 	color: #ddd;
 	width: 49.8%;
 	transition: .3s;
 }
-#reject:hover{
+
+#rejectUpload:hover,#rejectCreation:hover{
 	background: #ddd;
 	color: #666;
 }
@@ -193,4 +209,21 @@ ol li a:hover{
 
 #listSelectedFiles li span:last-child{
 	width: 20%;
+}
+
+#createInput{
+	border: 1px solid grey;
+	border-radius: 2px;
+	outline: 0;
+	height: 20px;
+	font-size: 16px;
+	text-indent: 10px;
+	width: 360px;
+	position: relative;
+	right: -16px;
+	left: 16px;
+	margin: 4px;
+}
+#createInput:focus{
+	box-shadow: 1px 1px 3px #999, -1px -1px 3px #999;
 }
