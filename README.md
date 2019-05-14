@@ -1,2 +1,2 @@
-# AJAX-File-Manager
-AJAX файловый менеджер на JS & PHP
+## AJAX-File-Manager
+![prev](https://i.ibb.co/gRmJ6tn/file-manger.png)
